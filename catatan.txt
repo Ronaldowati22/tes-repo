@@ -1,0 +1,118 @@
+https://api.line.me/v2/bot/message/reply contoh API untuk menerima balasan dari server
+
+ -  Jawabane kenapa Line bisa konek koding?
+Koding dapat di akses oleh line melalu OA line,
+    karena pada OA line terdapat link untuk mengakses 'server' bot.
+
+
+
+ - Iki mengenai springboot, framework sek di nggo
+
+
+
+    https://www.codepolitan.com/spring-boot-pengenalan-588da0c4bedd1
+
+
+
+
+
+
+- Untuk prosesnya yaitu
+Saat user mengetik text kemudian dikirim ke OA. Secara otomatis pesan tersebut 
+  dikirim / diteruskan menuju server yang terhubung dengan OA.
+  Dari proses tersebut server menerima text dan kemudian dicocokan keywordnya dengan knowledge yang sudah   dibuat didalam server.
+  Kemudian memberikan feedback berupa jawaban baik text mauapun gambar, jawaban tersebut sesuai dengan text   yang berisi keyword.
+
+
+xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0">
+
+   <!-- Pertanyaan ke 1 -->
+   <category>
+      <pattern>cara mendaftar * it telkom * online</pattern>
+      <template>
+         Untuk tahapan mendaftar it Telkom purwokerto secara online kaka bisa buka di reg.ittelkom-pwt.ac.id, terima kasih.#https://i.ibb.co/R0wdTDb/caradaftar.png
+      </template>
+   </category>
+
+   <category>
+      <pattern>cara daftar *</pattern>
+      <template>
+         Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+   
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>pendaftaran online</pattern>
+      <template>
+         Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+   
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>daftar online</pattern>
+      <template>
+            Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+      
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>* pendaftaran online *</pattern>
+      <template>
+         Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+   
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>* daftar online *</pattern>
+      <template>
+            Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+      
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>* pendaftaran online </pattern>
+      <template>
+         Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+   
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern>* daftar online </pattern>
+      <template>
+            Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+      
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern> pendaftaran online *</pattern>
+      <template>
+         Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+   
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+
+   <category>
+      <pattern> daftar online *</pattern>
+      <template>
+            Jika yang anda maksud mendaftar secara online, berikut hasilnya.
+      
+         <srai>cara mendaftar * it telkom * online</srai>
+      </template>
+   </category>
+   
